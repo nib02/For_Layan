@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Well Soon, Layan!</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <!-- <button id="openInvitation" class="btn" >Click me for a surprise! 🎉</button> -->
+        <div id="openInvitation"  class="heart-shape"></div>
+        <div class="card" id="invitation"style="display: none;" >
+            <div class="heart">❤</div>
+
+            <h1> A Special Invitation for Our Favorite Superhero </h1>
+            <p class="message">
+                Hey Layan! 🌸 We know you’ve been kicking it a little too hard (in a non-superhero way). 
+                It's time for some well-deserved enjoyment! 👑 So, we’re coming over to rescue you! 🦸‍♀️ 
+                We hope you’re ready for some love, laughter, and maybe a little bit of chaos. 😜
+            </p>
+            <div class="details">
+                <h2>Here’s the plan:</h2>
+                <ul>
+                    <li><strong>When:</strong> Sunday, 12 PM 🕛</li>
+                    <li><strong>Where:</strong> Your comfy castle 🏰 (aka your home)</li>
+                    <li><strong>Why:</strong> Because you broke your leg... but we’re coming to fix that with hugs! 💖</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <p class="small-text">P.S. We promise no surprise ninja moves... unless it’s a hug attack. 🤗</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        document.getElementById('openInvitation').addEventListener('click', function() {
+            document.getElementById('invitation').style.display = 'block';
+            document.getElementById('openInvitation').style.display = 'none'; // Hide the button
+        });
+    </script>
+</body>
+</html>
